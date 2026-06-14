@@ -3,13 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flyora Farms Limited | Poultry, Exotic Pigs & Agriculture</title>
+<title>Flyora Farms Limited | Poultry, Exotic Pigs & Sustainable Agriculture</title>
 
 <style>
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -20,47 +24,54 @@ body {
 }
 
 nav {
-    background: #14532d;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #0f3d24;
     color: white;
-    padding: 18px 20px;
-    text-align: center;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav h2 {
-    margin-bottom: 10px;
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #facc15;
 }
 
-nav a {
+.nav-links a {
     color: white;
     text-decoration: none;
-    margin: 0 12px;
+    margin-left: 20px;
     font-weight: bold;
 }
 
-header {
+.hero {
     background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
     url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80");
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
-    padding: 130px 20px;
+    padding: 150px 20px;
 }
 
-header h1 {
-    font-size: 3.5rem;
-    margin-bottom: 10px;
+.hero h1 {
+    font-size: 3.8rem;
+    margin-bottom: 15px;
 }
 
-header p {
-    font-size: 1.25rem;
-    margin-bottom: 25px;
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
 }
 
 .btn {
     display: inline-block;
-    background: #22c55e;
-    color: white;
+    background: #facc15;
+    color: #0f3d24;
     padding: 14px 28px;
     border-radius: 8px;
     text-decoration: none;
@@ -68,22 +79,42 @@ header p {
 }
 
 section {
-    max-width: 1100px;
+    max-width: 1150px;
     margin: auto;
-    padding: 60px 20px;
+    padding: 70px 20px;
 }
 
 h2 {
     color: #15803d;
-    margin-bottom: 20px;
     text-align: center;
-    font-size: 2rem;
+    margin-bottom: 25px;
+    font-size: 2.2rem;
 }
 
 .about {
     text-align: center;
-    max-width: 850px;
+    max-width: 900px;
     margin: auto;
+    font-size: 1.05rem;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.stat {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.stat h3 {
+    color: #15803d;
+    font-size: 2rem;
 }
 
 .cards {
@@ -125,36 +156,89 @@ h2 {
     background: #dcfce7;
     text-align: center;
     border-radius: 18px;
-    padding: 40px;
+    padding: 45px;
 }
 
-.contact {
-    text-align: center;
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.testimonial {
     background: white;
+    padding: 25px;
     border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.contact-box {
+    background: white;
+    border-radius: 16px;
     padding: 35px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.socials {
+    margin-top: 20px;
+}
+
+.socials a {
+    display: inline-block;
+    margin: 6px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background: #0f3d24;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    padding: 14px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    z-index: 999;
 }
 
 footer {
-    background: #14532d;
+    background: #0f3d24;
     color: white;
     text-align: center;
-    padding: 25px;
+    padding: 35px 20px;
 }
 
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 2.3rem;
+footer span {
+    color: #facc15;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
     }
 
-    header {
-        padding: 90px 20px;
+    .nav-links a {
+        display: inline-block;
+        margin: 6px;
+        font-size: 0.9rem;
     }
 
-    nav a {
-        display: block;
-        margin: 8px 0;
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero {
+        padding: 100px 20px;
     }
 }
 </style>
@@ -163,32 +247,51 @@ footer {
 <body>
 
 <nav>
-    <h2>Flyora Farms Limited</h2>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
+    <div class="logo">Flyora Farms Limited</div>
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </div>
 </nav>
 
-<header>
+<header class="hero">
     <h1>Flyora Farms Limited</h1>
-    <p>Poultry Farming • Exotic Pig Farming • Fresh Produce • Sustainable Agriculture</p>
-    <a href="#contact" class="btn">Contact Us</a>
+    <p>Premium Poultry • Exotic Pig Farming • Fresh Produce • Sustainable Agriculture</p>
+    <a href="#contact" class="btn">Partner With Us</a>
 </header>
 
 <section id="about">
-    <h2>About Us</h2>
+    <h2>About Flyora Farms</h2>
     <p class="about">
-        Flyora Farms Limited is an agricultural business based in Shendam LGA,
+        Flyora Farms Limited is a modern agricultural business based in Shendam LGA,
         Plateau State, Nigeria. We focus on poultry farming, exotic pig farming,
-        crop production, and sustainable agricultural practices. Our goal is to
-        provide healthy farm products while promoting responsible farming,
-        animal welfare, and modern agriculture.
+        crop production, and sustainable agriculture. Our mission is to produce
+        high-quality farm products while promoting responsible animal care,
+        food security, and modern agribusiness practices.
     </p>
 </section>
 
+<section>
+    <div class="stats">
+        <div class="stat">
+            <h3>100%</h3>
+            <p>Committed to Quality</p>
+        </div>
+        <div class="stat">
+            <h3>24/7</h3>
+            <p>Farm Management Focus</p>
+        </div>
+        <div class="stat">
+            <h3>3+</h3>
+            <p>Core Farming Areas</p>
+        </div>
+    </div>
+</section>
+
 <section id="services">
-    <h2>What We Do</h2>
+    <h2>Our Farming Services</h2>
 
     <div class="cards">
         <div class="card">
@@ -200,19 +303,19 @@ footer {
         <div class="card">
             <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=900&q=80" alt="Pig farming">
             <h3>Exotic Pig Farming</h3>
-            <p>Quality pig breeds raised with good nutrition, hygiene, and animal care standards.</p>
+            <p>Quality pig breeds raised with good nutrition, hygiene, and responsible animal care.</p>
         </div>
 
         <div class="card">
             <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=900&q=80" alt="Fresh produce">
             <h3>Fresh Produce</h3>
-            <p>Fresh vegetables and agricultural products grown for homes, markets, and businesses.</p>
+            <p>Fresh agricultural products grown for homes, markets, restaurants, and businesses.</p>
         </div>
 
         <div class="card">
             <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=900&q=80" alt="Modern agriculture">
             <h3>Modern Agriculture</h3>
-            <p>Using better planning, improved methods, and technology to support farm productivity.</p>
+            <p>Using improved planning, better methods, and technology to support farm productivity.</p>
         </div>
     </div>
 </section>
@@ -234,28 +337,78 @@ footer {
     <div class="mission">
         <h2>Our Mission</h2>
         <p>
-            Our mission is to produce healthy farm products through sustainable agriculture,
-            responsible animal care, and modern farming practices. We aim to serve our
-            community with quality poultry, exotic pigs, fresh produce, and trusted farm services.
+            To produce healthy farm products through sustainable agriculture,
+            responsible animal care, and modern farming practices while supporting
+            food security and community development.
         </p>
+    </div>
+</section>
+
+<section>
+    <h2>Why Choose Us</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Quality Farm Products</h3>
+            <p>We focus on healthy, reliable, and well-managed farm production.</p>
+        </div>
+
+        <div class="card">
+            <h3>Responsible Animal Care</h3>
+            <p>Animal welfare, hygiene, and proper feeding are central to our work.</p>
+        </div>
+
+        <div class="card">
+            <h3>Community Focus</h3>
+            <p>We aim to contribute to local food supply and agricultural growth.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Testimonials</h2>
+
+    <div class="testimonials">
+        <div class="testimonial">
+            <p>"Flyora Farms represents quality, care, and commitment to agriculture."</p>
+            <strong>Customer Review</strong>
+        </div>
+
+        <div class="testimonial">
+            <p>"A promising agricultural brand focused on growth and sustainability."</p>
+            <strong>Partner Feedback</strong>
+        </div>
     </div>
 </section>
 
 <section id="contact">
     <h2>Contact Us</h2>
 
-    <div class="contact">
+    <div class="contact-box">
         <p><strong>Business Name:</strong> Flyora Farms Limited</p>
         <p><strong>Email:</strong> Flyoraltd@gmail.com</p>
         <p><strong>Phone/WhatsApp:</strong> Coming Soon</p>
         <p><strong>Location:</strong> Shendam LGA, Plateau State, Nigeria</p>
         <p><strong>Website:</strong> www.flyorafarms.com</p>
+
         <br>
+
         <a href="mailto:Flyoraltd@gmail.com" class="btn">Send Email</a>
+
+        <div class="socials">
+            <a href="#">💬 WhatsApp Coming Soon</a>
+            <a href="#">📘 Facebook Coming Soon</a>
+            <a href="#">📸 Instagram Coming Soon</a>
+        </div>
     </div>
 </section>
 
+<a href="#contact" class="whatsapp-float">💬 WhatsApp</a>
+
 <footer>
+    <p><span>Flyora Farms Limited</span></p>
+    <p>Shendam LGA, Plateau State, Nigeria</p>
+    <p>Email: Flyoraltd@gmail.com</p>
     <p>© 2026 Flyora Farms Limited. All rights reserved.</p>
 </footer>
 
