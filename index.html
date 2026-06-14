@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flyora Farms | Poultry, Exotic Pigs & Sustainable Farming</title>
+<title>Flyora Farms Limited | Poultry, Exotic Pigs & Agriculture</title>
 
 <style>
 * {
@@ -19,6 +19,24 @@ body {
     line-height: 1.6;
 }
 
+nav {
+    background: #14532d;
+    color: white;
+    padding: 18px 20px;
+    text-align: center;
+}
+
+nav h2 {
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
 header {
     background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
     url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80");
@@ -30,16 +48,17 @@ header {
 }
 
 header h1 {
-    font-size: 3.7rem;
+    font-size: 3.5rem;
     margin-bottom: 10px;
 }
 
 header p {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     margin-bottom: 25px;
 }
 
 .btn {
+    display: inline-block;
     background: #22c55e;
     color: white;
     padding: 14px 28px;
@@ -111,6 +130,10 @@ h2 {
 
 .contact {
     text-align: center;
+    background: white;
+    border-radius: 14px;
+    padding: 35px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
 footer {
@@ -122,11 +145,16 @@ footer {
 
 @media (max-width: 600px) {
     header h1 {
-        font-size: 2.4rem;
+        font-size: 2.3rem;
     }
 
     header {
         padding: 90px 20px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
     }
 }
 </style>
@@ -134,62 +162,71 @@ footer {
 
 <body>
 
+<nav>
+    <h2>Flyora Farms Limited</h2>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+</nav>
+
 <header>
-    <h1>Flyora Farms</h1>
+    <h1>Flyora Farms Limited</h1>
     <p>Poultry Farming • Exotic Pig Farming • Fresh Produce • Sustainable Agriculture</p>
     <a href="#contact" class="btn">Contact Us</a>
 </header>
 
-<section>
-    <h2>About Flyora Farms</h2>
+<section id="about">
+    <h2>About Us</h2>
     <p class="about">
-        Flyora Farms is an innovative agricultural business focused on poultry production,
-        exotic pig farming, fresh crop cultivation, and sustainable farming practices.
-        Our goal is to provide high-quality farm products while promoting animal welfare,
-        responsible agriculture, and modern farming methods.
+        Flyora Farms Limited is an agricultural business based in Shendam LGA,
+        Plateau State, Nigeria. We focus on poultry farming, exotic pig farming,
+        crop production, and sustainable agricultural practices. Our goal is to
+        provide healthy farm products while promoting responsible farming,
+        animal welfare, and modern agriculture.
     </p>
 </section>
 
-<section>
+<section id="services">
     <h2>What We Do</h2>
 
     <div class="cards">
         <div class="card">
             <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=900&q=80" alt="Poultry farming">
             <h3>Poultry Farming</h3>
-            <p>Healthy poultry raised with care, proper feeding, clean housing, and good farm management.</p>
+            <p>Healthy poultry raised with proper feeding, clean housing, and strong farm management.</p>
         </div>
 
         <div class="card">
             <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=900&q=80" alt="Pig farming">
             <h3>Exotic Pig Farming</h3>
-            <p>Quality pig breeds raised with proper nutrition, hygiene, and animal welfare standards.</p>
+            <p>Quality pig breeds raised with good nutrition, hygiene, and animal care standards.</p>
         </div>
 
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=900&q=80" alt="Fresh vegetables">
+            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=900&q=80" alt="Fresh produce">
             <h3>Fresh Produce</h3>
-            <p>Fresh vegetables and farm products grown with care for homes, markets, and businesses.</p>
+            <p>Fresh vegetables and agricultural products grown for homes, markets, and businesses.</p>
         </div>
 
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=900&q=80" alt="Modern farming">
+            <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=900&q=80" alt="Modern agriculture">
             <h3>Modern Agriculture</h3>
-            <p>Using better farming methods, planning, and technology to improve productivity and quality.</p>
+            <p>Using better planning, improved methods, and technology to support farm productivity.</p>
         </div>
     </div>
 </section>
 
-<section>
+<section id="gallery">
     <h2>Farm Gallery</h2>
 
     <div class="gallery">
         <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=900&q=80" alt="Poultry">
-        <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=900&q=80" alt="Pig farm">
+        <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=900&q=80" alt="Pig farming">
         <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80" alt="Farm field">
         <img src="https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?auto=format&fit=crop&w=900&q=80" alt="Green farm">
         <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=900&q=80" alt="Harvested vegetables">
-        <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=900&q=80" alt="Greenhouse farming">
+        <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=900&q=80" alt="Greenhouse">
     </div>
 </section>
 
@@ -198,26 +235,28 @@ footer {
         <h2>Our Mission</h2>
         <p>
             Our mission is to produce healthy farm products through sustainable agriculture,
-            responsible animal care, and modern farming practices. We aim to serve our community
-            with quality poultry, exotic pigs, fresh produce, and trusted farm services.
+            responsible animal care, and modern farming practices. We aim to serve our
+            community with quality poultry, exotic pigs, fresh produce, and trusted farm services.
         </p>
     </div>
 </section>
 
 <section id="contact">
-    <h2>Contact Flyora Farms</h2>
+    <h2>Contact Us</h2>
 
     <div class="contact">
-        <p>Email: info@flyorafarms.com</p>
-        <p>Website: www.flyorafarms.com</p>
-        <p>Location: Shendam LGA, Plateau State, Nigeria</p>
+        <p><strong>Business Name:</strong> Flyora Farms Limited</p>
+        <p><strong>Email:</strong> Flyoraltd@gmail.com</p>
+        <p><strong>Phone/WhatsApp:</strong> Coming Soon</p>
+        <p><strong>Location:</strong> Shendam LGA, Plateau State, Nigeria</p>
+        <p><strong>Website:</strong> www.flyorafarms.com</p>
         <br>
-        <a href="mailto:info@flyorafarms.com" class="btn">Send Email</a>
+        <a href="mailto:Flyoraltd@gmail.com" class="btn">Send Email</a>
     </div>
 </section>
 
 <footer>
-    <p>© 2026 Flyora Farms. All rights reserved.</p>
+    <p>© 2026 Flyora Farms Limited. All rights reserved.</p>
 </footer>
 
 </body>
