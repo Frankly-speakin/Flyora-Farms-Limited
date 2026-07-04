@@ -3,554 +3,981 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FlyoraFarms Limited | Poultry, Pig Farming, Feed Formulation & Organic Manure</title>
-<meta name="description" content="FlyoraFarms Limited is a modern livestock agribusiness in Shendam LGA, Plateau State, Nigeria, focused on poultry farming, exotic pig farming, feed formulation, farm consultation, organic manure, and sustainable livestock production.">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<title>FlyoraFarms Limited | Poultry, Exotic Pig Farming & Farm Consultancy</title>
+<meta name="description" content="FlyoraFarms Limited — Modern Livestock Farming, Feed Formulation, Organic Manure and Farm Consultancy in Shendam, Plateau State, Nigeria.">
+<meta name="theme-color" content="#14532d">
+<meta name="robots" content="index,follow">
+<meta name="author" content="FlyoraFarms Limited">
+<link rel="canonical" href="https://www.flyorafarms.com">
+
+<!-- Open Graph -->
+<meta property="og:title" content="FlyoraFarms Limited">
+<meta property="og:description" content="Modern Livestock Farming, Feed Formulation, Organic Manure and Farm Consultancy.">
+<meta property="og:image" content="https://www.flyorafarms.com/images/hero.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.flyorafarms.com">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-html{
-scroll-behavior:smooth;
-}
+
+/*=========================
+  BASE
+=========================*/
+*{margin:0;padding:0;box-sizing:border-box;}
+
 body{
-font-family:Arial, Helvetica, sans-serif;
-background:#f8fafc;
-color:#1f2937;
-line-height:1.7;
-}
-nav{
-position:sticky;
-top:0;
-z-index:1000;
-background:#0b3d24;
-padding:16px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-.logo{
-color:#facc15;
-font-size:1.5rem;
-font-weight:800;
-}
-.nav-links a{
-color:white;
-text-decoration:none;
-margin-left:22px;
-font-weight:600;
-}
-.hero{
-min-height:100vh;
-background:
-linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)),
-url("https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=1200&q=75");
-background-size:cover;
-background-position:center center;
-background-repeat:no-repeat;
-color:white;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:120px 20px 80px;
+  font-family:'Segoe UI',Arial,sans-serif;
+  color:#1e293b;
+  line-height:1.6;
 }
 
-.hero-content{
-max-width:900px;
-margin:auto;
-}
-
-.hero h1{
-font-size:4rem;
-line-height:1.1;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:1.3rem;
-max-width:760px;
-margin:0 auto 35px;
-}
-.btn{
-display:inline-block;
-background:#facc15;
-color:#0b3d24;
-padding:12px 24px;
-border-radius:50px;
-text-decoration:none;
-font-weight:800;
-margin:6px;
-}
 section{
-max-width:1180px;
-margin:auto;
-padding:75px 20px;
-scroll-margin-top:100px;
+  padding:90px 8%;
 }
+
 .section-title{
-text-align:center;
-margin-bottom:35px;
+  text-align:center;
+  max-width:700px;
+  margin:0 auto 55px;
 }
+
 .section-title h2{
-color:#15803d;
-font-size:2.4rem;
-line-height:1.2;
+  font-size:2.5rem;
+  color:#14532d;
+  margin-bottom:15px;
 }
+
 .section-title p{
-color:#64748b;
-max-width:780px;
-margin:10px auto 0;
+  color:#64748b;
+  font-size:1.05rem;
 }
-.about-text{
-max-width:930px;
-margin:auto;
-text-align:center;
-font-size:1.08rem;
-}
-.stats{
-display:grid;
-grid-template-columns:repeat(auto-fit, minmax(190px, 1fr));
-gap:22px;
-}
-.stat{
-background:white;
-padding:30px;
-border-radius:18px;
-text-align:center;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
-}
-.stat h3{
-color:#15803d;
-font-size:2.2rem;
-}
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
-gap:26px;
-}
-.card{
-background:white;
-border-radius:18px;
-overflow:hidden;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
-}
-.card img{
-width:100%;
-height:220px;
-object-fit:cover;
-}
-.card-content{
-padding:25px;
-text-align:center;
-}
-.card h3{
-color:#14532d;
-margin-bottom:10px;
-}
-.highlight{
-background:#fef9c3;
-border-left:6px solid #facc15;
-padding:30px;
-border-radius:18px;
-margin-top:30px;
-}
-.mission{
-background:linear-gradient(135deg, #14532d, #16a34a);
-color:white;
-border-radius:24px;
-padding:55px 30px;
-text-align:center;
-}
-.mission h2{
-color:#facc15;
-margin-bottom:15px;
-font-size:2.2rem;
-}
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit, minmax(230px, 1fr));
-gap:16px;
-}
-.gallery img{
-width:100%;
-height:240px;
-object-fit:cover;
-border-radius:16px;
-}
-.contact-box{
-background:white;
-border-radius:22px;
-padding:40px;
-text-align:center;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
-}
-.contact-box p{
-margin:10px 0;
-word-break:break-word;
-}
-.socials{
-margin-top:25px;
-}
-.socials a{
-display:inline-block;
-margin:6px;
-padding:12px 18px;
-border-radius:50px;
-background:#14532d;
-color:white;
-text-decoration:none;
-font-weight:700;
-}
-.socials i,
-.btn i,
-.whatsapp i{
-margin-right:6px;
-}
-.whatsapp{
-position:fixed;
-left:20px;
-bottom:80px;
-background:#25d366;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-text-decoration:none;
-font-weight:800;
-box-shadow:0 10px 25px rgba(0,0,0,0.3);
-z-index:999;
-}
-footer{
-background:#0b3d24;
-color:white;
-padding:50px 20px;
-margin-top:60px;
-text-align:center;
-}
-.footer-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
-gap:30px;
-max-width:1200px;
-margin:auto;
-text-align:center;
-}
-footer h3{
-color:#facc15;
-margin-bottom:10px;
-}
-footer p{
-margin-bottom:8px;
-}
-.footer-links{
-margin-top:20px;
-}
-.footer-links a{
-color:#facc15;
-text-decoration:none;
-font-weight:700;
-margin:0 6px;
-}
-.copyright{
-text-align:center;
-margin-top:30px;
-padding-top:20px;
-border-top:1px solid rgba(255,255,255,0.2);
-}
-@media(max-width:768px){
+
+/* ---------- Navigation ---------- */
+
 nav{
-flex-direction:column;
-gap:12px;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  padding:18px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(11,61,36,.96);
+  backdrop-filter:blur(8px);
+  z-index:1000;
+  box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.logo{
+  font-size:1.8rem;
+  font-weight:800;
+  color:#facc15;
+  letter-spacing:.5px;
+}
+
+.nav-links{
+  display:flex;
+  gap:28px;
 }
 
 .nav-links a{
-display:inline-block;
-margin:6px;
-font-size:0.9rem;
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  transition:.3s;
 }
+
+.nav-links a:hover{
+  color:#facc15;
+}
+
+/* ---------- HERO ---------- */
 
 .hero{
-min-height:85vh;
-padding:90px 20px 60px;
+  min-height:100vh;
+  padding:140px 8% 80px;
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:60px;
+  align-items:center;
+  background:linear-gradient(135deg,#0b3d24 0%,#14532d 100%);
+  overflow:hidden;
 }
 
-.hero h1{
-font-size:2.2rem;
-line-height:1.2;
+.hero-left h1{
+  font-size:4.2rem;
+  line-height:1.1;
+  color:#fff;
+  margin-bottom:25px;
 }
 
-.hero p{
-font-size:1.05rem;
+.hero-left p{
+  font-size:1.2rem;
+  color:#d1fae5;
+  margin-bottom:35px;
+  max-width:650px;
 }
 
-.section-title h2{
-font-size:2rem;
+.hero-list{
+  list-style:none;
+  margin-bottom:35px;
 }
 
-.whatsapp{
-left:15px;
-right:auto;
-bottom:5px;
-padding:6px 10px;
-font-size:0.75rem;
-max-width:120px;
+.hero-list li{
+  color:white;
+  font-size:1.08rem;
+  margin-bottom:15px;
 }
+
+.hero-list i{
+  color:#facc15;
+  margin-right:12px;
 }
+
+.hero-buttons{
+  display:flex;
+  gap:18px;
+  flex-wrap:wrap;
+}
+
+.btn-primary{
+  background:#facc15;
+  color:#14532d;
+  padding:15px 28px;
+  border-radius:50px;
+  font-weight:700;
+  text-decoration:none;
+  transition:.3s;
+  display:inline-block;
+}
+
+.btn-primary:hover{
+  transform:translateY(-3px);
+}
+
+.btn-secondary{
+  border:2px solid white;
+  color:white;
+  padding:15px 28px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:700;
+  transition:.3s;
+  display:inline-block;
+}
+
+.btn-secondary:hover{
+  background:white;
+  color:#14532d;
+}
+
+.hero-right{
+  display:flex;
+  justify-content:center;
+}
+
+.hero-card{
+  background:white;
+  border-radius:28px;
+  overflow:hidden;
+  box-shadow:0 25px 60px rgba(0,0,0,.25);
+  max-width:500px;
+}
+
+.hero-card img{
+  width:100%;
+  display:block;
+  height:340px;
+  object-fit:cover;
+}
+
+.hero-card-content{
+  padding:30px;
+}
+
+.hero-card-content h3{
+  color:#14532d;
+  margin-bottom:18px;
+}
+
+.hero-card-content p{
+  color:#475569;
+  line-height:1.7;
+}
+
+/*=========================
+  ABOUT SECTION
+=========================*/
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+.about-image img{
+  width:100%;
+  border-radius:25px;
+  box-shadow:0 25px 60px rgba(0,0,0,.15);
+}
+
+.about-content h2{
+  font-size:2.5rem;
+  color:#14532d;
+  margin-bottom:20px;
+}
+
+.about-content p{
+  color:#475569;
+  font-size:1.05rem;
+  margin-bottom:20px;
+}
+
+.about-features{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+  margin-top:30px;
+}
+
+.about-feature{
+  background:#fff;
+  padding:18px;
+  border-radius:16px;
+  box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.about-feature i{
+  font-size:28px;
+  color:#16a34a;
+  margin-bottom:12px;
+}
+
+.about-feature h4{
+  color:#14532d;
+  margin-bottom:8px;
+}
+
+/*=========================
+  STATISTICS
+=========================*/
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:25px;
+}
+
+.stat{
+  background:white;
+  padding:35px 20px;
+  border-radius:20px;
+  text-align:center;
+  transition:.35s;
+  box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.stat:hover{
+  transform:translateY(-10px);
+}
+
+.stat i{
+  font-size:45px;
+  color:#16a34a;
+  margin-bottom:20px;
+}
+
+.stat h3{
+  font-size:2.4rem;
+  color:#14532d;
+  margin-bottom:8px;
+}
+
+.stat p{
+  color:#64748b;
+}
+
+/*=========================
+  SERVICES / CARDS
+=========================*/
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:35px;
+}
+
+.card{
+  background:white;
+  border-radius:24px;
+  overflow:hidden;
+  transition:.35s;
+  box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.card img{
+  width:100%;
+  height:240px;
+  object-fit:cover;
+}
+
+.card-content{
+  padding:30px;
+}
+
+.card-content h3{
+  color:#14532d;
+  font-size:1.5rem;
+  margin-bottom:15px;
+}
+
+.card-content p{
+  color:#64748b;
+  margin-bottom:22px;
+}
+
+.service-link{
+  display:inline-block;
+  padding:10px 22px;
+  border-radius:40px;
+  background:#14532d;
+  color:white;
+  text-decoration:none;
+  font-weight:700;
+  transition:.3s;
+}
+
+.service-link:hover{
+  background:#16a34a;
+}
+
+/*=========================
+  GALLERY
+=========================*/
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+}
+
+.gallery-item{
+  overflow:hidden;
+  border-radius:24px;
+  position:relative;
+  box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+.gallery-item img{
+  width:100%;
+  height:280px;
+  object-fit:cover;
+  transition:.5s;
+  display:block;
+}
+
+.gallery-item:hover img{
+  transform:scale(1.08);
+}
+
+.gallery-caption{
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:18px;
+  background:linear-gradient(transparent,rgba(0,0,0,.75));
+  color:white;
+  font-weight:700;
+}
+
+/*=========================
+  MISSION
+=========================*/
+
+.mission{
+  background:linear-gradient(135deg,#14532d,#15803d);
+  padding:70px;
+  border-radius:30px;
+  text-align:center;
+  color:white;
+  box-shadow:0 25px 60px rgba(0,0,0,.15);
+}
+
+.mission h2{
+  font-size:2.6rem;
+  color:#facc15;
+  margin-bottom:20px;
+}
+
+.mission p{
+  font-size:1.15rem;
+  max-width:900px;
+  margin:auto;
+}
+
+/*=========================
+  CONTACT
+=========================*/
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+  align-items:start;
+}
+
+.contact-card{
+  background:white;
+  padding:40px;
+  border-radius:25px;
+  box-shadow:0 20px 45px rgba(0,0,0,.08);
+}
+
+.contact-card h3{
+  color:#14532d;
+  margin-bottom:25px;
+  font-size:2rem;
+}
+
+.contact-item{
+  display:flex;
+  align-items:flex-start;
+  margin-bottom:25px;
+}
+
+.contact-item i{
+  font-size:24px;
+  color:#16a34a;
+  margin-right:18px;
+  margin-top:5px;
+}
+
+.contact-item h4{
+  margin-bottom:5px;
+  color:#14532d;
+}
+
+.contact-item a{
+  text-decoration:none;
+  color:#475569;
+}
+
+.contact-map iframe{
+  width:100%;
+  height:100%;
+  min-height:420px;
+  border:none;
+  border-radius:25px;
+  box-shadow:0 20px 45px rgba(0,0,0,.08);
+}
+
+/*=========================
+  FOOTER
+=========================*/
+
+footer{
+  background:#082616;
+  padding:70px 8% 30px;
+  color:white;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:40px;
+}
+
+.footer-column h3{
+  color:#facc15;
+  margin-bottom:20px;
+}
+
+.footer-column p,
+.footer-column a{
+  color:#d1d5db;
+  text-decoration:none;
+  display:block;
+  margin-bottom:10px;
+}
+
+.footer-column a:hover{
+  color:#facc15;
+}
+
+.copyright{
+  margin-top:45px;
+  text-align:center;
+  padding-top:30px;
+  border-top:1px solid rgba(255,255,255,.15);
+}
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:900px){
+
+  .hero{
+    grid-template-columns:1fr;
+    text-align:center;
+    padding-top:130px;
+  }
+
+  .hero-left h1{
+    font-size:2.6rem;
+  }
+
+  .hero-left p{
+    margin:auto auto 30px;
+  }
+
+  .hero-list{
+    text-align:left;
+    display:inline-block;
+  }
+
+  .hero-buttons{
+    justify-content:center;
+  }
+
+  .gallery{
+    grid-template-columns:1fr;
+  }
+
+  .gallery-item img{
+    height:240px;
+  }
+
+  .about-grid{
+    grid-template-columns:1fr;
+  }
+
+  .stats{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .nav-links{
+    display:none;
+  }
+}
+
 </style>
 </head>
 <body>
+
+<!-- ================= NAVIGATION ================= -->
 <nav>
-<div class="logo">FlyoraFarms Limited</div>
-<div class="nav-links">
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#manure">Organic Manure</a>
-<a href="#gallery">Gallery</a>
-<a href="#reviews">Reviews</a>
-<a href="#contact">Contact</a>
-</div>
+  <div class="logo">FlyoraFarms</div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </div>
 </nav>
+
+<!-- ================= HERO ================= -->
 <header class="hero">
-<div class="hero-content">
-<h1>FlyoraFarms Limited</h1>
-<p>Poultry Farming • Exotic Pig Farming • Feed Formulation • Farm Consultation • Organic Manure • Sustainable Livestock Production</p>
-<a href="#services" class="btn">Explore Our Services</a>
-<a href="#contact" class="btn">Contact Us</a>
-</div>
+  <div class="hero-left">
+    <h1>FlyoraFarms Limited</h1>
+    <p>
+      Building a sustainable future through modern poultry farming,
+      exotic pig production, feed formulation,
+      organic manure and professional farm consultancy.
+    </p>
+    <ul class="hero-list">
+      <li><i class="fas fa-check-circle"></i>Poultry Farming</li>
+      <li><i class="fas fa-check-circle"></i>Exotic Pig Farming</li>
+      <li><i class="fas fa-check-circle"></i>Feed Formulation</li>
+      <li><i class="fas fa-check-circle"></i>Organic Manure</li>
+      <li><i class="fas fa-check-circle"></i>Farm Consultancy</li>
+    </ul>
+    <div class="hero-buttons">
+      <a href="#services" class="btn-primary">Explore Services</a>
+      <a href="#contact" class="btn-secondary">Contact Us</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-card">
+      <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=1000&q=75" alt="Flyora Farms">
+      <div class="hero-card-content">
+        <h3>Growing Agriculture Sustainably</h3>
+        <p>
+          Quality livestock production, practical farm advisory,
+          nutritious feed formulation and environmentally
+          friendly organic manure solutions.
+        </p>
+      </div>
+    </div>
+  </div>
 </header>
+
+<!-- ================= ABOUT ================= -->
 <section id="about">
-<div class="section-title">
-<h2>About FlyoraFarms</h2>
-<p>Modern livestock agribusiness rooted in quality, nutrition, animal care, and sustainable farm resource use.</p>
-</div>
-<p class="about-text">
-FlyoraFarms Limited is a modern agricultural business based in Shendam LGA, Plateau State, Nigeria. We specialize in poultry farming, exotic pig farming, feed formulation, organic manure solutions, farm consultation, and sustainable livestock production.
-</p>
+  <div class="about-grid">
+    <div class="about-image">
+      <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=900&q=75" alt="About FlyoraFarms">
+    </div>
+    <div class="about-content">
+      <h2>About FlyoraFarms Limited</h2>
+      <p>
+        FlyoraFarms Limited is a modern agribusiness committed to sustainable livestock production, quality feed formulation, organic manure solutions and professional farm advisory services.
+      </p>
+      <p>
+        Located in Shendam LGA, Plateau State, Nigeria, we combine practical farming experience with innovation to help farmers, businesses and communities achieve sustainable agricultural growth.
+      </p>
+      <div class="about-features">
+        <div class="about-feature">
+          <i class="fas fa-seedling"></i>
+          <h4>Sustainability</h4>
+          <p>Responsible farming practices.</p>
+        </div>
+        <div class="about-feature">
+          <i class="fas fa-piggy-bank"></i>
+          <h4>Quality Livestock</h4>
+          <p>Healthy poultry & exotic pigs.</p>
+        </div>
+        <div class="about-feature">
+          <i class="fas fa-leaf"></i>
+          <h4>Organic Manure</h4>
+          <p>Natural soil improvement.</p>
+        </div>
+        <div class="about-feature">
+          <i class="fas fa-user-tie"></i>
+          <h4>Farm Advisory</h4>
+          <p>Professional agricultural support.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
+<!-- ================= STATISTICS ================= -->
 <section>
-<div class="stats">
-<div class="stat"><h3>100%</h3><p>Quality Commitment</p></div>
-<div class="stat"><h3>5+</h3><p>Core Agribusiness Areas</p></div>
-<div class="stat"><h3>24/7</h3><p>Animal Care Focus</p></div>
-<div class="stat"><h3>∞</h3><p>Growth Vision</p></div>
-</div>
+  <div class="stats">
+    <div class="stat">
+      <i class="fas fa-egg"></i>
+      <h3>5+</h3>
+      <p>Core Services</p>
+    </div>
+    <div class="stat">
+      <i class="fas fa-paw"></i>
+      <h3>100%</h3>
+      <p>Quality Commitment</p>
+    </div>
+    <div class="stat">
+      <i class="fas fa-seedling"></i>
+      <h3>24/7</h3>
+      <p>Animal Care</p>
+    </div>
+    <div class="stat">
+      <i class="fas fa-chart-line"></i>
+      <h3>∞</h3>
+      <p>Growth Vision</p>
+    </div>
+  </div>
 </section>
+
+<!-- ================= SERVICES ================= -->
 <section id="services">
-<div class="section-title">
-<h2>Our Core Services</h2>
-<p>We combine practical livestock farming, feed nutrition, farm advisory, organic manure solutions, and modern agribusiness thinking.</p>
-</div>
-<div class="cards">
-<div class="card">
-<img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=900&q=80" alt="Poultry farming">
-<div class="card-content">
-<h3>Poultry Farming</h3>
-<p>Healthy poultry raised through clean housing, proper feeding, biosecurity, and responsible farm management.</p>
-</div>
-</div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=900&q=80" alt="Pig farming">
-<div class="card-content">
-<h3>Exotic Pig Farming</h3>
-<p>Quality pig breeds raised with attention to hygiene, nutrition, welfare, and long-term productivity.</p>
-</div>
-</div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=900&q=80" alt="Feed formulation">
-<div class="card-content">
-<h3>Feed Formulation</h3>
-<p>We formulate quality livestock feed designed to support animal health, growth, productivity, and efficient nutrition.</p>
-</div>
-</div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?auto=format&fit=crop&w=900&q=80" alt="Farm consultation">
-<div class="card-content">
-<h3>Farm Consultation & Advisory</h3>
-<p>We provide practical guidance on poultry farming, exotic pig production, feed formulation, farm management, and sustainable livestock practices.</p>
-</div>
-</div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&w=900&q=80" alt="Organic manure">
-<div class="card-content">
-<h3>Organic Manure Sales</h3>
-<p>Nutrient-rich organic manure from livestock operations, suitable for farmers, gardens, and soil improvement.</p>
-</div>
-</div>
-</div>
+  <div class="section-title">
+    <h2>Our Services</h2>
+    <p>Comprehensive agribusiness solutions built on quality, sustainability and experience.</p>
+  </div>
+  <div class="cards">
+
+    <div class="card">
+      <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=900&q=75" alt="Poultry Farming">
+      <div class="card-content">
+        <h3>Poultry Farming</h3>
+        <p>
+          Healthy poultry raised through clean housing,
+          proper feeding and responsible farm management.
+        </p>
+        <a href="#contact" class="service-link">Request Information</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=900&q=75" alt="Exotic Pig Farming">
+      <div class="card-content">
+        <h3>Exotic Pig Farming</h3>
+        <p>
+          Premium exotic pig breeds raised for healthy,
+          sustainable production and profitable yield.
+        </p>
+        <a href="#contact" class="service-link">Request Information</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=900&q=75" alt="Feed Formulation">
+      <div class="card-content">
+        <h3>Feed Formulation</h3>
+        <p>
+          Nutritious, cost-effective feed formulated to
+          support healthy growth and strong yields.
+        </p>
+        <a href="#contact" class="service-link">Request Information</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=900&q=75" alt="Organic Manure">
+      <div class="card-content">
+        <h3>Organic Manure</h3>
+        <p>
+          Natural, environmentally friendly manure that
+          improves soil health and crop productivity.
+        </p>
+        <a href="#contact" class="service-link">Request Information</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=75" alt="Farm Consultancy">
+      <div class="card-content">
+        <h3>Farm Consultancy</h3>
+        <p>
+          Practical, professional advisory services to help
+          farmers and agribusinesses grow sustainably.
+        </p>
+        <a href="#contact" class="service-link">Request Information</a>
+      </div>
+    </div>
+
+  </div>
 </section>
-<section id="manure">
-<div class="section-title">
-<h2>Organic Manure Sales & Farm Waste Solutions</h2>
-<p>Providing nutrient-rich organic manure and sustainable farm waste solutions for crop production, gardening, and soil improvement.</p>
-</div>
-<div class="highlight">
-<h3>Available for Purchase</h3>
-<p>
-FlyoraFarms Limited provides quality organic manure produced from poultry and livestock farm waste. Our organic manure helps improve soil fertility, enhance soil structure, increase water retention, and support healthy crop growth. It is a natural and sustainable soil improvement option for farmers, gardeners, nurseries, and agricultural businesses.
-</p>
-<br>
-<p>
-<strong>Suitable for:</strong> maize farming, vegetable gardens, fruit trees, nursery production, home gardens, landscaping projects, and commercial crop farms.
-</p>
-<br>
-<a href="#contact" class="btn">Ask About Organic Manure</a>
-</div>
-</section>
+
+<!-- ================= GALLERY ================= -->
 <section>
-<div class="mission">
-<h2>Our Mission</h2>
-<p>
-To produce high-quality livestock products, nutritionally balanced animal feed, practical farm advisory support, and useful organic manure through responsible animal care, innovation, and sustainable livestock production.
-</p>
-</div>
+  <div class="section-title">
+    <h2>Our Gallery</h2>
+    <p>A glimpse into our farms, livestock and operations.</p>
+  </div>
+  <div class="gallery">
+
+    <div class="gallery-item">
+      <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=900&q=75" alt="Healthy Poultry">
+      <div class="gallery-caption">Healthy Poultry</div>
+    </div>
+
+    <div class="gallery-item">
+      <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=900&q=75" alt="Exotic Pig Farming">
+      <div class="gallery-caption">Exotic Pig Farming</div>
+    </div>
+
+    <div class="gallery-item">
+      <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=900&q=75" alt="Feed Formulation">
+      <div class="gallery-caption">Feed Formulation</div>
+    </div>
+
+    <div class="gallery-item">
+      <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=900&q=75" alt="Organic Manure">
+      <div class="gallery-caption">Organic Manure</div>
+    </div>
+
+    <div class="gallery-item">
+      <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=900&q=75" alt="Farm Consultancy">
+      <div class="gallery-caption">Farm Consultancy</div>
+    </div>
+
+    <div class="gallery-item">
+      <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=75" alt="Our Farm">
+      <div class="gallery-caption">Our Farm</div>
+    </div>
+
+  </div>
 </section>
-<section id="gallery">
-<div class="section-title">
-<h2>Farm Gallery</h2>
-<p>A visual look at the type of livestock, feed, advisory, and sustainable agribusiness activities Flyora Farms represents.</p>
-</div>
-<div class="gallery">
-<img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=900&q=80" alt="Poultry">
-<img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=900&q=80" alt="Pig farming">
-<img src="https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=900&q=80" alt="Feed formulation">
-<img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&w=900&q=80" alt="Organic manure and soil">
-<img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=900&q=80" alt="Agriculture">
-<img src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?auto=format&fit=crop&w=900&q=80" alt="Farm advisory">
-</div>
+
+<!-- ================= WHY CHOOSE US ================= -->
+<section>
+  <div class="section-title">
+    <h2>Why Choose FlyoraFarms?</h2>
+    <p>Building trust through quality livestock production, innovation and sustainable agriculture.</p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <div class="card-content">
+        <i class="fas fa-feather-alt fa-3x" style="color:#16a34a;"></i>
+        <h3>Healthy Poultry</h3>
+        <p>Raised using modern livestock management practices.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-content">
+        <i class="fas fa-piggy-bank fa-3x" style="color:#16a34a;"></i>
+        <h3>Quality Pig Farming</h3>
+        <p>Healthy exotic pig breeds for sustainable production.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-content">
+        <i class="fas fa-seedling fa-3x" style="color:#16a34a;"></i>
+        <h3>Organic Farming</h3>
+        <p>Environmentally friendly farming solutions.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-content">
+        <i class="fas fa-user-graduate fa-3x" style="color:#16a34a;"></i>
+        <h3>Professional Advice</h3>
+        <p>Helping farmers grow profitable businesses.</p>
+      </div>
+    </div>
+  </div>
 </section>
+
+<!-- ================= MISSION ================= -->
+<section>
+  <div class="mission">
+    <h2>Our Mission</h2>
+    <p>
+      To promote sustainable agriculture through quality livestock production, innovative feed
+      solutions, organic manure and professional farm consultancy — empowering farmers and
+      communities across Nigeria to grow with confidence.
+    </p>
+  </div>
+</section>
+
+<!-- ================= REVIEWS ================= -->
 <section id="reviews">
-<div class="section-title">
-<h2>Customer Reviews</h2>
-<p>
-We value feedback from our customers, partners, and farming community. Leave a review and help us grow.
-</p>
-</div>
-<div class="contact-box">
-<p>
-Have you worked with FlyoraFarms Limited? Share your experience by leaving a Google Review. Your feedback helps us improve our services and build trust with future customers.
-</p>
-<br>
-<a href="https://share.google/VazRWaiYeOsfUllm9" class="btn" target="_blank">
-<i class="fab fa-google"></i> Leave a Google Review
-</a>
-</div>
+  <div class="section-title">
+    <h2>Customer Reviews</h2>
+    <p>
+      Our commitment to excellence is reflected in the experiences of our customers and partners.
+    </p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <div class="card-content">
+        ⭐⭐⭐⭐⭐
+        <h3>Excellent Service</h3>
+        <p>Professional advice and excellent communication.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-content">
+        ⭐⭐⭐⭐⭐
+        <h3>Quality Livestock</h3>
+        <p>Healthy animals and excellent customer care.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-content">
+        ⭐⭐⭐⭐⭐
+        <h3>Highly Recommended</h3>
+        <p>Reliable farming partner with sustainable solutions.</p>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <div style="text-align:center;">
+    <a href="https://share.google/VazRWaiYeOsfUllm9" class="btn-primary" target="_blank">
+      Leave a Google Review
+    </a>
+  </div>
 </section>
-<section>
-<div class="section-title">
-<h2>Why Choose FlyoraFarms?</h2>
-<p>Our foundation is livestock quality, feed nutrition, farm advisory, organic resource use, animal welfare, and sustainable agribusiness growth.</p>
-</div>
-<div class="cards">
-<div class="card"><div class="card-content"><h3>Quality Livestock Production</h3><p>We focus on healthy poultry and exotic pigs raised using responsible management practices.</p></div></div>
-<div class="card"><div class="card-content"><h3>Feed Formulation Expertise</h3><p>Our feed solutions are designed to support animal health, growth, efficiency, and productivity.</p></div></div>
-<div class="card"><div class="card-content"><h3>Professional Farm Advisory</h3><p>We share practical farming knowledge and livestock management insights to support farmers and agribusiness entrepreneurs.</p></div></div>
-<div class="card"><div class="card-content"><h3>Organic Waste Value</h3><p>We convert livestock waste into useful organic manure that can support farmers and soil health.</p></div></div>
-</div>
-</section>
+
+<!-- ================= CONTACT ================= -->
 <section id="contact">
-<div class="section-title">
-<h2>Contact FlyoraFarms</h2>
-<p>Reach out for partnerships, livestock inquiries, feed formulation, farm consultation, organic manure, and future business opportunities.</p>
-</div>
-<div class="contact-box">
-<p><strong>Business Name:</strong> FlyoraFarms Limited</p>
+  <div class="section-title">
+    <h2>Contact FlyoraFarms Limited</h2>
+    <p>
+      We're ready to assist with livestock production, feed formulation, farm consultancy and organic manure enquiries.
+    </p>
+  </div>
 
-<p><strong>Email:</strong>
-<a href="mailto:flyoraltd@gmail.com">flyoraltd@gmail.com</a>
-</p>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <h3>Get In Touch</h3>
 
-<p><strong>Phone/WhatsApp:</strong>
-<a href="tel:+2348069632302">+234 806 963 2302</a>
-</p>
+      <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <div>
+          <h4>Phone</h4>
+          <a href="tel:+2348069632302">+234 806 963 2302</a>
+        </div>
+      </div>
 
-<p><strong>Location:</strong>
-Shendam LGA, Plateau State, Nigeria
-</p>
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <h4>Email</h4>
+          <a href="mailto:flyoraltd@gmail.com">flyoraltd@gmail.com</a>
+        </div>
+      </div>
 
-<p><strong>Website:</strong> <a href="https://www.flyorafarms.com" target="_blank">www.flyorafarms.com</a></p>
+      <div class="contact-item">
+        <i class="fas fa-location-dot"></i>
+        <div>
+          <h4>Office</h4>
+          Shendam LGA, Plateau State, Nigeria
+        </div>
+      </div>
 
-<br>
+      <div class="hero-buttons">
+        <a href="mailto:flyoraltd@gmail.com" class="btn-primary">Email Us</a>
+        <a href="https://wa.me/2348069632302" class="btn-secondary">WhatsApp</a>
+      </div>
+    </div>
 
-<a href="mailto:flyoraltd@gmail.com" class="btn">
-    <i class="fas fa-envelope"></i> Send Email
-</a>
-
-<a href="https://share.google/VazRWaiYeOsfUl1m9" class="btn" target="_blank">
-    <i class="fab fa-google"></i> Leave a Google Review
-</a>
-
-<div class="socials">
-
-<!-- Facebook -->
-<a href="#"
-target="_blank"
-style="background:#1877F2;color:white;">
-<i class="fab fa-facebook-f"></i> Facebook Coming Soon
-</a>
-
-<!-- Instagram -->
-<a href="#"
-target="_blank"
-style="background:linear-gradient(45deg,#F58529,#DD2A7B,#8134AF,#515BD4);color:white;">
-<i class="fab fa-instagram"></i> Instagram Coming Soon
-</a>
-
-</div>
-</div>
+    <div class="contact-map">
+      <iframe
+        loading="lazy"
+        allowfullscreen
+        src="https://maps.google.com/maps?q=Shendam%20Plateau%20State%20Nigeria&t=&z=12&ie=UTF8&iwloc=&output=embed">
+      </iframe>
+    </div>
+  </div>
 </section>
-<a href="https://wa.me/2348069632302" class="whatsapp" target="_blank">
-<i class="fab fa-whatsapp"></i> WhatsApp Us
-</a>
+
+<!-- ================= FOOTER ================= -->
 <footer>
-<div class="footer-grid">
-<div>
-<h3>FlyoraFarms Limited</h3>
-<p>Sustainable livestock farming and modern agribusiness solutions.</p>
-</div>
-<div>
-<h3>Services</h3>
-<p>Poultry Farming</p>
-<p>Exotic Pig Farming</p>
-<p>Feed Formulation</p>
-<p>Farm Consultation</p>
-<p>Organic Manure</p>
-</div>
-<div>
-<h3>Contact</h3>
-
-<p><a href="tel:+2348069632302">📞 Call: +234 806 963 2302</a></p>
-
-<p><a href="mailto:flyoraltd@gmail.com">
-✉️ Email: flyoraltd@gmail.com
-</a></p>
-
-<p>📍 Shendam LGA, Plateau State, Nigeria</p>
-</div>
-</div>
-<div class="copyright">
-© 2026 FlyoraFarms Limited. All Rights Reserved.
-</div>
-<div class="footer-links">
-<a href="privacy.html">Privacy Policy</a> |
-<a href="terms.html">Terms & Conditions</a> |
-<a href="cookies.html">Cookie Notice</a>
-</div>
+  <div class="footer-grid">
+    <div class="footer-column">
+      <h3>FlyoraFarms</h3>
+      <p>Sustainable poultry, exotic pig farming, feed formulation, organic manure and farm consultancy.</p>
+    </div>
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-column">
+      <h3>Services</h3>
+      <p>Poultry Farming</p>
+      <p>Exotic Pig Farming</p>
+      <p>Feed Formulation</p>
+      <p>Organic Manure</p>
+    </div>
+    <div class="footer-column">
+      <h3>Contact</h3>
+      <a href="tel:+2348069632302">+234 806 963 2302</a>
+      <a href="mailto:flyoraltd@gmail.com">flyoraltd@gmail.com</a>
+      <p>Shendam LGA, Plateau State, Nigeria</p>
+    </div>
+  </div>
+  <div class="copyright">
+    &copy; 2026 FlyoraFarms Limited. All rights reserved.
+  </div>
 </footer>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),
-s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/6a308b4275c43a1d4bec55db/1jr6pvvdf';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+
 </body>
 </html>
